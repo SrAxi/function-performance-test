@@ -1,11 +1,11 @@
 {
   "name": "function-performance-test",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Tests the performance of given functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "tsc",
     "link": "npm run build && cd dist && npm link"
   },
@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/SrAxi/function-performance-test#readme",
   "devDependencies": {
+    "@types/node": "^12.0.7",
+    "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.1"
-  },
-  "dependencies": {
-    "@types/node": "^12.0.7"
   }
 }

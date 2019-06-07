@@ -2,7 +2,7 @@ interface Options {
     iterations?: number;
 }
 
-export interface Test {
+export interface TestSubject {
     fn: Function;
     args?: Array<any>;
     options?: Options;
