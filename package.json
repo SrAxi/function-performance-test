@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/SrAxi/function-performance-test.git"
   },
-  "keywords": [],
+  "keywords": [
+    "performance",
+    "test",
+    "functions"
+  ],
   "author": "Riccardo Polacci",
   "license": "ISC",
   "bugs": {
