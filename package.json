@@ -1,0 +1,30 @@
+{
+  "name": "function-performance-test",
+  "version": "0.1.0",
+  "description": "Tests the performance of given functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "link": "npm run build && cd dist && npm link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrAxi/function-performance-test.git"
+  },
+  "keywords": [],
+  "author": "Riccardo Polacci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SrAxi/function-performance-test/issues"
+  },
+  "homepage": "https://github.com/SrAxi/function-performance-test#readme",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.7"
+  }
+}
