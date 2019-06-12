@@ -1,5 +1,5 @@
 import { performance } from 'perf_hooks';
-import { TestSubject, TestResult } from './interfaces';
+import { TestResult, TestSubject } from './interfaces';
 
 /**
  * PerformanceTest
@@ -23,7 +23,7 @@ export class PerformanceTest {
         return this.testResult;
     }
 
-    private testIterator({ fn, args, options }: TestSubject) {
+    private testIterator({ fn, args = [], options = {} }: TestSubject) {
         let durationArr = [], t0, t1;
         let lowestTime: number;
         let highestTime: number;

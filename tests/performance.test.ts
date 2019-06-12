@@ -1,5 +1,5 @@
-import { PerformanceTest, performanceTest } from './performance';
-import { TestResult } from './interfaces';
+import { PerformanceTest, performanceTest } from '../src/performance';
+import { TestResult } from '../src/interfaces';
 
 function test(a, b) {
     return a + b;
