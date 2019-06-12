@@ -25,8 +25,8 @@ export class PerformanceTest {
 
     private testIterator({ fn, args = [], options = {} }: TestSubject) {
         let durationArr = [], t0, t1;
-        let lowestTime: number;
-        let highestTime: number;
+        let lowestTime: number | null = null;
+        let highestTime: number | null = null;
         const maxIterations = options.iterations || this.iterations;
 
         for (let i = 0; i < maxIterations; i++) {
@@ -40,12 +40,12 @@ export class PerformanceTest {
             durationArr.push(runTime);
 
             // min run time
-            if (!lowestTime || runTime < lowestTime) {
+            if (lowestTime === null || runTime < lowestTime) {
                 lowestTime = this.toNumber(runTime);
             }
 
             // max run time
-            if (!highestTime || runTime > highestTime) {
+            if (highestTime === null || runTime > highestTime) {
                 highestTime = this.toNumber(runTime);
             }
         }
